@@ -39,9 +39,10 @@ body {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 2.1rem;
-  color: #090909;
-  background-color: #ebebeb;
+  color: #fff;
+  background-color: #000;
   padding: 20px;
+  /* overflow: hidden; */
 }
 
 /* -------------------navigation */
@@ -251,6 +252,7 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  overflow: hidden;
 }
 
 .project-item {
@@ -345,4 +347,86 @@ nav {
 
 .project-item .project-name ul li {
   list-style: none;
+}
+/* projects items section end*/
+/* --------------------project section end*/
+
+/* --------------------project about start*/
+
+.about {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about .about-intro {
+  display: flex;
+  gap: 50px;
+  background: linear-gradient(to left, var(--bianco), transparent),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+  padding: 200px 100px;
+}
+
+.about .about-intro h3 {
+  font-size: 80px;
+  line-height: 72px;
+  margin-bottom: 30px;
+  color: var(--rosino-scuro);
+}
+
+.about .about-text {
+  flex-basis: 60%;
+}
+
+.about .about-img {
+  flex-basis: 40%;
+}
+
+.about-boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.about-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 120px);
+  padding: 30px;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.about-box:hover {
+  /* TODO:transition */
+}
+
+.about-box .img-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+}
+
+.about-box.box1 {
+  background: linear-gradient(to top, var(--verde), transparent),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+}
+
+.about-box.box2 {
+  background: linear-gradient(to top, var(--blue-scuro), transparent),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+}
+
+.about-box.box3 {
+  background: linear-gradient(to top, var(--giallo-scuro), transparent),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+}
+
+.about-box.box4 {
+  background: linear-gradient(to top, var(--rosso-scuro), transparent),
+    url(https://grainy-gradients.vercel.app/noise.svg);
 }
