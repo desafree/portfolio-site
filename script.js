@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 let box = document.querySelector('.project-box');
 let width = box.offsetWidth;
 
@@ -28,3 +30,30 @@ function marquee(which, time, direction) {
 }
 
 var master = gsap.timeline().add(marquee(boxes, 25, dirFromLeft), 1);
+
+var rotation = gsap.to('.rotation', { rotate: 360 });
+ScrollTrigger.create({
+  trigger: '.projects',
+  animation: rotation,
+  scrub: 1,
+  start: 'top 50%',
+  end: 'bottom 0%',
+});
+
+var tl = gsap.timeline();
+tl.from('.item1 .project-description', { x: -2000, ease: 'power2' });
+tl.from('.item1 .project-name', { x: 2000, ease: 'power2' }, '<');
+tl.from('.item2 .project-description', { x: -2000, ease: 'power2' });
+tl.from('.item2 .project-name', { x: 2000, ease: 'power2' }, '<');
+tl.from('.item3 .project-description', { x: -2000 });
+tl.from('.item3 .project-name', { x: 2000, ease: 'power2' }, '<');
+tl.from('.item4 .project-description', { x: -2000, ease: 'power2' });
+tl.from('.item4 .project-name', { x: 2000, ease: 'power2' }, '<');
+
+ScrollTrigger.create({
+  trigger: '.projects-items',
+  animation: tl,
+  scrub: 1,
+  start: 'top 90%',
+  end: 'bottom 90%',
+});

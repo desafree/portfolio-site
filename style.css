@@ -198,3 +198,151 @@ nav {
   transform: scale(0.95);
 }
 /* -contact-box style end */
+/* --------------------intro section end*/
+
+/* --------------------project section start*/
+.projects {
+  margin-top: 10px;
+}
+/* -project intro */
+.projects-intro {
+  background: linear-gradient(-128deg, rgba(255, 255, 255, 0) 5%, #090909),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+  padding: 100px;
+  color: #ebebeb;
+  position: relative;
+}
+
+.projects-intro h3 {
+  font-size: 8rem;
+  font-weight: 700;
+  line-height: 7.2rem;
+  margin-bottom: 5rem;
+  /* color: var(--rosino); */
+}
+
+.projects-intro p {
+  font-size: 2.1rem;
+  max-width: 1000px;
+  line-height: 2.4rem;
+}
+
+.projects-intro img {
+  padding: 50px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  background: linear-gradient(-128deg, rgba(255, 255, 255, 0) 2%, #090909),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+  border-radius: 50%;
+  border: 2px solid #ebebeb;
+  transition: all 0.3s;
+}
+
+.projects-intro img:hover {
+  border: 2px solid var(--giallo);
+  transform: rotate(40deg);
+}
+
+/* project intro end */
+/* projects items section */
+.projects-items {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-item {
+  display: flex;
+}
+
+.project-item .project-description {
+  padding: 80px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  flex-basis: 50%;
+  background: linear-gradient(to right, var(--giallo), transparent),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+}
+
+.project-item .project-name {
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+  flex-basis: 50%;
+  background: linear-gradient(to left, var(--giallo), transparent),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+}
+
+.project-item .project-name h4 {
+  font-size: 52px;
+  line-height: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.project-item.item1 .project-description {
+  background: linear-gradient(to left, var(--giallo), transparent),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+}
+.project-item.item1 .project-name {
+  background: linear-gradient(to right, var(--giallo), transparent),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+}
+
+.project-item.item1 .project-name h4 {
+  color: var(--blue-scuro);
+}
+
+.project-item.item3 .project-description {
+  background: linear-gradient(to left, var(--blue-chiaro), transparent),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+}
+.project-item.item3 .project-name {
+  background: linear-gradient(to right, var(--blue-chiaro), transparent),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+}
+
+.project-item.item3 .project-name h4 {
+  color: var(--rosino);
+}
+
+.project-item.item2 .project-description {
+  background: linear-gradient(to left, var(--rosso-scuro), transparent),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+}
+.project-item.item2 .project-name {
+  background: linear-gradient(to right, var(--rosso-scuro), transparent),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+}
+
+.project-item.item2 .project-name h4 {
+  color: var(--giallo-scuro);
+}
+
+.project-item.item4 .project-description {
+  background: linear-gradient(to left, var(--verde), transparent),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+}
+.project-item.item4 .project-name {
+  background: linear-gradient(to right, var(--verde), transparent),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+}
+
+.project-item.item4 .project-name h4 {
+  color: var(--giallo-scuro);
+}
+
+.project-item .project-name ul {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.project-item .project-name ul li {
+  list-style: none;
+}
