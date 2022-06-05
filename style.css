@@ -351,7 +351,7 @@ nav {
 /* projects items section end*/
 /* --------------------project section end*/
 
-/* --------------------project about start*/
+/* --------------------about start*/
 
 .about {
   margin-top: 10px;
@@ -429,4 +429,127 @@ nav {
 .about-box.box4 {
   background: linear-gradient(to top, var(--rosso-scuro), transparent),
     url(https://grainy-gradients.vercel.app/noise.svg);
+}
+/* --------------------about end*/
+
+/* --------------------contact start*/
+
+.contact {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact .socials {
+  display: flex;
+  gap: 50px;
+  padding: 200px;
+  background: linear-gradient(-128deg, rgba(255, 255, 255, 0) 5%, #090909),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+}
+
+.contact .socials .text {
+  flex-basis: 60%;
+  font-size: 32px;
+  line-height: 35px;
+  font-weight: 700;
+  color: var(--giallo-scuro);
+}
+
+.contact .socials .social-route {
+  position: relative;
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .socials .social-route a {
+  position: absolute;
+}
+
+.contact .socials .social-route a img {
+  width: 150px;
+  padding: 10px;
+}
+
+.contact .socials .social-route .item1 {
+  transform: translateX(-75%);
+}
+
+.contact .socials .social-route .item2 {
+  transform: translateY(-75%);
+}
+
+.contact .socials .social-route .item3 {
+  transform: translateX(75%);
+}
+
+.contact .socials .social-route .item4 {
+  transform: translateY(75%);
+}
+
+.form-container {
+  background: linear-gradient(to top, #fee9f4, transparent),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+  padding: 10px;
+}
+
+.form-container h3 {
+  padding: 100px;
+  padding-bottom: 0;
+  text-align: center;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.form-container form {
+  display: flex;
+  gap: 10px;
+  padding: 100px;
+  padding-top: 50px;
+}
+
+.form-container form .inputs {
+  flex-basis: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 100px);
+  gap: 20px;
+}
+
+.form-container form .inputs textarea {
+  grid-column: 1/-1;
+  grid-row: 2/-1;
+}
+
+.form-container form .inputs input,
+.form-container form .inputs textarea {
+  background-color: rgba(0, 0, 0, 0.637);
+  border: 2px solid rgba(255, 255, 255, 0.329);
+  padding: 30px;
+  font-size: 18px;
+  color: #ebebeb;
+  font-weight: 400;
+  font-family: 'Syne', sans-serif;
+}
+
+.form-container form .inputs input:focus,
+.form-container form .inputs textarea:focus {
+  outline: 2px solid white;
+}
+
+.form-container form button {
+  flex-basis: 30%;
+  background: linear-gradient(to top, var(--giallo-scuro), transparent),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+  border: none;
+  cursor: pointer;
+  border: 3px solid white;
+  transition: all 0.3s;
+}
+
+.form-container form button:hover {
+  border: 3px solid var(--giallo-scuro);
 }
