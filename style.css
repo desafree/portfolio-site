@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700&display=swap');
+/* -------------------initialize css */
+:root {
+  --blue-chiaro: #2356a6;
+  --rosino: #f7775e;
+  --blue-scuro: #0e3d89;
+
+  --giallo: #edab29;
+  --blue-chiaro: #2356a6;
+  --rosino-scuro: #eb5b3d;
+
+  --verde: #1ba8ab;
+  --giallo-scuro: #eaab29;
+
+  --rosso-scuro: #d82b18;
+  --giallo: #edab29;
+
+  --giallo: #edab29;
+  --rosso-chiaro: #e2432a;
+
+  --bianco: #fee9f4;
+  --giallo-scuro: #f6ac19;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  color: #090909;
+  background-color: #ebebeb;
+  padding: 20px;
+}
+
+/* -------------------navigation */
+nav {
+  margin-top: 8rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* --------------------intro section */
+.intro {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 200px);
+  margin-top: 8rem;
+  grid-gap: 1rem;
+}
+
+/* project box style */
+.intro .project-box {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  background: linear-gradient(to right, var(--blue-scuro), transparent),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 30px;
+  color: var(--bianco);
+  transition: all 0.5s;
+}
+
+.intro .project-box:hover {
+  transform: scale(0.95);
+}
+
+/* -marquee effect start*/
+.intro .project-box .wrapper {
+  position: absolute;
+  width: 150%;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 10rem;
+}
+
+.wrapper .box {
+  position: absolute;
+  width: 350px;
+  height: 100px;
+  text-align: center;
+  white-space: nowrap;
+}
+.wrapper .boxes {
+  position: relative;
+  left: -600px;
+}
+
+.intro .project-box .wrapper h3 {
+  white-space: nowrap;
+}
+/* -marquee effect end*/
+
+.arrow-down {
+  width: 30px;
+  padding: 10px;
+  box-sizing: content-box;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.left-top {
+  justify-self: flex-start;
+  align-self: flex-start;
+}
+
+.right-top {
+  justify-self: flex-end;
+  align-self: flex-start;
+}
+
+.left-bottom {
+  justify-self: flex-start;
+  align-self: flex-end;
+}
+
+.right-bottom {
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+
+/* -work-box style start */
+.intro .work-box {
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  grid-column: 3/4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.5s;
+  align-items: center;
+  background: linear-gradient(to bottom, var(--giallo) 50%, transparent),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+}
+
+.intro .work-box:hover {
+  transform: scale(0.95);
+}
+/* -work-box style end */
+
+/* -about-box style end */
+.intro .about-box {
+  grid-column: 4/5;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  grid-column: 3/4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.5s;
+  align-items: center;
+  background: linear-gradient(to top, var(--rosino-scuro) 50%, transparent),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+}
+
+.intro .about-box:hover {
+  transform: scale(0.95);
+}
+/* -about-box style end */
+
+/* -contact-box style start */
+.intro .contact-box {
+  grid-column: 4/5;
+  grid-row: 1/-1;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.5s;
+  align-items: center;
+  background: linear-gradient(to top, var(--verde), transparent),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+}
+
+.intro .contact-box:hover {
+  transform: scale(0.95);
+}
+/* -contact-box style end */
