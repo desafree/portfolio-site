@@ -66,7 +66,7 @@ nav {
   grid-column: 1/3;
   grid-row: 1/3;
   background: linear-gradient(to right, var(--blue-scuro), transparent),
-    url(https://grainy-gradients.vercel.app/noise.svg);
+    url('./assets/grain.svg');
   position: relative;
   overflow: hidden;
   display: grid;
@@ -138,6 +138,15 @@ nav {
   align-self: flex-end;
 }
 
+.intro div {
+  text-align: center;
+}
+
+.intro .about-box p,
+.intro .work-box p {
+  margin: 10px 15px;
+}
+
 /* -work-box style start */
 .intro .work-box {
   color: #fff;
@@ -150,7 +159,7 @@ nav {
   transition: all 0.5s;
   align-items: center;
   background: linear-gradient(to bottom, var(--giallo) 50%, transparent),
-    url(https://grainy-gradients.vercel.app/noise.svg);
+    url('./assets/grain.svg');
 }
 
 .intro .work-box:hover {
@@ -171,7 +180,7 @@ nav {
   transition: all 0.5s;
   align-items: center;
   background: linear-gradient(to top, var(--rosino-scuro) 50%, transparent),
-    url(https://grainy-gradients.vercel.app/noise.svg);
+    url('./assets/grain.svg');
 }
 
 .intro .about-box:hover {
@@ -192,7 +201,7 @@ nav {
   transition: all 0.5s;
   align-items: center;
   background: linear-gradient(to top, var(--verde), transparent),
-    url(https://grainy-gradients.vercel.app/noise.svg);
+    url('./assets/grain.svg');
 }
 
 .intro .contact-box:hover {
@@ -208,8 +217,8 @@ nav {
 /* -project intro */
 .projects-intro {
   background: linear-gradient(-128deg, rgba(255, 255, 255, 0) 5%, #090909),
-    url(https://grainy-gradients.vercel.app/noise.svg);
-  padding: 100px;
+    url('./assets/grain.svg');
+  padding: 200px 100px;
   color: #ebebeb;
   position: relative;
 }
@@ -220,11 +229,12 @@ nav {
   line-height: 7.2rem;
   margin-bottom: 5rem;
   /* color: var(--rosino); */
+  max-width: 80%;
 }
 
 .projects-intro p {
   font-size: 2.1rem;
-  max-width: 1000px;
+  max-width: 80%;
   line-height: 2.4rem;
 }
 
@@ -234,7 +244,7 @@ nav {
   bottom: 50px;
   right: 50px;
   background: linear-gradient(-128deg, rgba(255, 255, 255, 0) 2%, #090909),
-    url(https://grainy-gradients.vercel.app/noise.svg);
+    url('./assets/grain.svg');
   border-radius: 50%;
   border: 2px solid #ebebeb;
   transition: all 0.3s;
@@ -266,7 +276,7 @@ nav {
   margin-right: 10px;
   flex-basis: 50%;
   background: linear-gradient(to right, var(--giallo), transparent),
-    url(https://grainy-gradients.vercel.app/noise.svg);
+    url('./assets/grain.svg');
 }
 
 .project-item .project-name {
@@ -274,10 +284,9 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 10px;
   flex-basis: 50%;
   background: linear-gradient(to left, var(--giallo), transparent),
-    url(https://grainy-gradients.vercel.app/noise.svg);
+    url('./assets/grain.svg');
 }
 
 .project-item .project-name h4 {
@@ -285,15 +294,16 @@ nav {
   line-height: 60px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .project-item.item1 .project-description {
   background: linear-gradient(to left, var(--giallo), transparent),
-    url(https://grainy-gradients.vercel.app/noise.svg);
+    url('./assets/grain.svg');
 }
 .project-item.item1 .project-name {
   background: linear-gradient(to right, var(--giallo), transparent),
-    url(https://grainy-gradients.vercel.app/noise.svg);
+    url('./assets/grain.svg');
 }
 
 .project-item.item1 .project-name h4 {
@@ -302,11 +312,11 @@ nav {
 
 .project-item.item3 .project-description {
   background: linear-gradient(to left, var(--blue-chiaro), transparent),
-    url(https://grainy-gradients.vercel.app/noise.svg);
+    url('./assets/grain.svg');
 }
 .project-item.item3 .project-name {
   background: linear-gradient(to right, var(--blue-chiaro), transparent),
-    url(https://grainy-gradients.vercel.app/noise.svg);
+    url('./assets/grain.svg');
 }
 
 .project-item.item3 .project-name h4 {
@@ -315,11 +325,11 @@ nav {
 
 .project-item.item2 .project-description {
   background: linear-gradient(to left, var(--rosso-scuro), transparent),
-    url(https://grainy-gradients.vercel.app/noise.svg);
+    url('./assets/grain.svg');
 }
 .project-item.item2 .project-name {
   background: linear-gradient(to right, var(--rosso-scuro), transparent),
-    url(https://grainy-gradients.vercel.app/noise.svg);
+    url('./assets/grain.svg');
 }
 
 .project-item.item2 .project-name h4 {
@@ -328,11 +338,11 @@ nav {
 
 .project-item.item4 .project-description {
   background: linear-gradient(to left, var(--verde), transparent),
-    url(https://grainy-gradients.vercel.app/noise.svg);
+    url('./assets/grain.svg');
 }
 .project-item.item4 .project-name {
   background: linear-gradient(to right, var(--verde), transparent),
-    url(https://grainy-gradients.vercel.app/noise.svg);
+    url('./assets/grain.svg');
 }
 
 .project-item.item4 .project-name h4 {
@@ -364,8 +374,10 @@ nav {
   display: flex;
   gap: 50px;
   background: linear-gradient(to left, var(--bianco), transparent),
-    url(https://grainy-gradients.vercel.app/noise.svg);
-  padding: 200px 100px;
+    url('./assets/grain.svg');
+  padding: 100px;
+  justify-content: center;
+  align-items: center;
 }
 
 .about .about-intro h3 {
@@ -377,10 +389,21 @@ nav {
 
 .about .about-text {
   flex-basis: 60%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .about .about-img {
   flex-basis: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.about .about-img img {
+  width: 100%;
+  max-width: 500px;
 }
 
 .about-boxes {
@@ -413,22 +436,22 @@ nav {
 
 .about-box.box1 {
   background: linear-gradient(to top, var(--verde), transparent),
-    url(https://grainy-gradients.vercel.app/noise.svg);
+    url('./assets/grain.svg');
 }
 
 .about-box.box2 {
   background: linear-gradient(to top, var(--blue-scuro), transparent),
-    url(https://grainy-gradients.vercel.app/noise.svg);
+    url('./assets/grain.svg');
 }
 
 .about-box.box3 {
   background: linear-gradient(to top, var(--giallo-scuro), transparent),
-    url(https://grainy-gradients.vercel.app/noise.svg);
+    url('./assets/grain.svg');
 }
 
 .about-box.box4 {
   background: linear-gradient(to top, var(--rosso-scuro), transparent),
-    url(https://grainy-gradients.vercel.app/noise.svg);
+    url('./assets/grain.svg');
 }
 /* --------------------about end*/
 
@@ -444,13 +467,15 @@ nav {
 .contact .socials {
   display: flex;
   gap: 50px;
-  padding: 200px;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 0;
   background: linear-gradient(-128deg, rgba(255, 255, 255, 0) 5%, #090909),
-    url(https://grainy-gradients.vercel.app/noise.svg);
+    url('./assets/grain.svg');
 }
 
 .contact .socials .text {
-  flex-basis: 60%;
+  flex-basis: 50%;
   font-size: 32px;
   line-height: 35px;
   font-weight: 700;
@@ -459,7 +484,7 @@ nav {
 
 .contact .socials .social-route {
   position: relative;
-  flex-basis: 40%;
+  flex-basis: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -492,7 +517,7 @@ nav {
 
 .form-container {
   background: linear-gradient(to top, #fee9f4, transparent),
-    url(https://grainy-gradients.vercel.app/noise.svg);
+    url('./assets/grain.svg');
   padding: 10px;
 }
 
@@ -526,13 +551,18 @@ nav {
 
 .form-container form .inputs input,
 .form-container form .inputs textarea {
+  box-sizing: border-box;
+  text-indent: 20px;
   background-color: rgba(0, 0, 0, 0.637);
   border: 2px solid rgba(255, 255, 255, 0.329);
-  padding: 30px;
-  font-size: 18px;
   color: #ebebeb;
   font-weight: 400;
   font-family: 'Syne', sans-serif;
+  width: 100%;
+}
+
+.form-container form .inputs input::placeholder,
+.form-container form .inputs textarea::placeholder {
 }
 
 .form-container form .inputs input:focus,
@@ -543,7 +573,7 @@ nav {
 .form-container form button {
   flex-basis: 30%;
   background: linear-gradient(to top, var(--giallo-scuro), transparent),
-    url(https://grainy-gradients.vercel.app/noise.svg);
+    url('./assets/grain.svg');
   border: none;
   cursor: pointer;
   border: 3px solid white;
@@ -552,4 +582,270 @@ nav {
 
 .form-container form button:hover {
   border: 3px solid var(--giallo-scuro);
+}
+
+/* ---------------------------RESPONSIVE */
+@media only screen and (max-width: 1000px) {
+  .about .about-intro {
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+  }
+
+  .about .about-intro .about-img {
+    max-width: 500px;
+  }
+
+  .form-container form {
+    flex-direction: column;
+  }
+
+  .form-container form button {
+    padding: 30px;
+  }
+
+  .intro {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+  }
+
+  .intro .project-box {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+
+  .intro .work-box {
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
+
+  .intro .about-box {
+    grid-column: 4/5;
+    grid-row: 1/3;
+  }
+
+  .intro .contact-box {
+    grid-column: 1/5;
+    grid-row: 3/4;
+  }
+
+  .projects-intro h3 {
+    font-size: 6rem;
+    line-height: 6.1rem;
+    margin-bottom: 30px;
+  }
+
+  .projects-intro p {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+
+  .projects-intro img {
+    padding: 30px;
+  }
+
+  .project-item {
+    flex-direction: column-reverse;
+  }
+
+  .project-item .project-description {
+    margin-right: 0;
+    padding-top: 10px;
+  }
+
+  .project-item .project-name {
+    padding-bottom: 10px;
+  }
+
+  .project-item.item1 .project-description {
+    background: linear-gradient(to right, var(--giallo), transparent),
+      url('./assets/grain.svg');
+  }
+
+  .project-item.item2 .project-description {
+    background: linear-gradient(to right, var(--rosso-scuro), transparent),
+      url('./assets/grain.svg');
+  }
+
+  .project-item.item3 .project-description {
+    background: linear-gradient(to right, var(--blue-chiaro), transparent),
+      url('./assets/grain.svg');
+  }
+
+  .project-item.item4 .project-description {
+    background: linear-gradient(to right, var(--verde), transparent),
+      url('./assets/grain.svg');
+  }
+
+  .form-container form .inputs {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 100px);
+  }
+
+  .form-container form .inputs input:nth-child(2) {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+  }
+
+  .form-container form .inputs textarea {
+    grid-column: 1/-1;
+    grid-row: 3/-1;
+  }
+
+  .about .about-intro {
+    background: linear-gradient(to top, var(--bianco), transparent),
+      url('./assets/grain.svg');
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .intro {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 200px);
+  }
+
+  .intro .project-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+  }
+
+  .intro .work-box {
+    grid-column: 4/6;
+    grid-row: 1/3;
+  }
+
+  .intro .about-box {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+
+  .intro .contact-box {
+    grid-column: 3/6;
+    grid-row: 3/4;
+  }
+
+  .about-boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-intro {
+    padding: 100px 50px;
+  }
+
+  .projects-intro img {
+    top: 20px;
+    right: 20px;
+    bottom: initial;
+  }
+
+  .projects-intro h3 {
+    max-width: 90%;
+  }
+
+  .projects-intro p {
+    max-width: 100%;
+  }
+
+  .about .about-intro {
+    padding: 100px 50px;
+  }
+
+  .form-container form {
+    padding: 50px 50px 100px;
+  }
+
+  .form-container form .inputs {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 100px);
+  }
+
+  .form-container form .inputs input:nth-child(2) {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+  }
+
+  .form-container form .inputs textarea {
+    grid-column: 1/-1;
+    grid-row: 4/-1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  .intro {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 200px);
+  }
+
+  .intro .project-box {
+    grid-column: 1/-1;
+    grid-row: 1/3;
+  }
+
+  .intro .work-box {
+    grid-column: 1/4;
+    grid-row: 3/4;
+  }
+
+  .intro .about-box {
+    grid-column: 4/-1;
+    grid-row: 3/4;
+  }
+
+  .intro .contact-box {
+    grid-column: 1/-1;
+    grid-row: 4/5;
+  }
+
+  .about-boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-intro img {
+    visibility: hidden;
+  }
+
+  .projects-intro {
+    padding: 70px 20px;
+  }
+
+  .project-item .project-description {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .projects-intro h3 {
+    font-size: 5rem;
+    line-height: 5.1rem;
+  }
+
+  .project-item .project-name h4 {
+    font-size: 5rem;
+    line-height: 5.1rem;
+  }
+
+  .about .about-intro h3 {
+    font-size: 5rem;
+    line-height: 5.1rem;
+  }
+
+  .about .about-intro {
+    padding: 70px 20px;
+  }
+
+  .form-container form {
+    padding: 50px 20px 70px;
+  }
+
+  .form-container {
+    padding: 0;
+  }
+
+  .form-container h3 {
+    padding: 100px 20px 0px;
+  }
 }
