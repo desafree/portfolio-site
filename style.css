@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 /* -------------------initialize css */
 :root {
   --blue-chiaro: #2356a6;
@@ -35,7 +37,7 @@ html {
 }
 
 body {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Epilogue', 'JetBrains Mono', 'Syne', sans-serif;
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 2.1rem;
@@ -148,6 +150,7 @@ nav {
 .intro .about-box p,
 .intro .work-box p {
   margin: 10px 15px;
+  text-transform: capitalize;
 }
 
 /* -work-box style start */
@@ -215,7 +218,12 @@ nav {
     url('./assets/grain.svg'); */
   background-color: var(--verde);
   transition: transform 0.5s;
+  text-transform: capitalize;
   /* border: 2px solid white; */
+}
+
+.intro .contact-box p {
+  margin: 10px 15px;
 }
 
 .intro .contact-box:hover {
@@ -234,7 +242,7 @@ nav {
   /* background: linear-gradient(-128deg, rgba(255, 255, 255, 0) 5%, #090909),
     url('./assets/grain.svg'); */
   background-color: #333;
-  padding: 200px 100px;
+  padding: 100px;
   color: #ebebeb;
   position: relative;
   /* border: 2px solid white; */
@@ -426,7 +434,7 @@ nav {
   gap: 50px;
   /* background: linear-gradient(to left, var(--bianco), transparent),
     url('./assets/grain.svg'); */
-  background-color: var(--bianco);
+  background-color: white;
   padding: 100px;
   justify-content: center;
   align-items: center;
@@ -580,9 +588,9 @@ nav {
 }
 
 .form-container {
-  /* background: linear-gradient(to top, #fee9f4, transparent),
-    url('./assets/grain.svg'); */
-  background-color: #fee9f4;
+  background: linear-gradient(to top, #fee9f4, transparent),
+    url('./assets/grain.svg');
+  background-color: #fff;
   padding: 10px;
   color: #333;
 }
@@ -600,13 +608,19 @@ nav {
   gap: 10px;
   padding: 100px;
   padding-top: 50px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.form-container form .inputs textarea {
+  padding-top: 15px;
 }
 
 .form-container form .inputs {
   flex-basis: 70%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 100px);
+  grid-template-rows: repeat(4, 60px);
   gap: 20px;
 }
 
@@ -625,6 +639,7 @@ nav {
   font-weight: 400;
   font-family: 'Syne', sans-serif;
   width: 100%;
+  font-size: 1.8rem;
 }
 
 .form-container form .inputs input::placeholder,
@@ -750,7 +765,7 @@ nav {
 
   .form-container form .inputs {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 100px);
+    grid-template-rows: repeat(5, 60px);
   }
 
   .form-container form .inputs input:nth-child(2) {
@@ -828,7 +843,7 @@ nav {
 
   .form-container form .inputs {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 100px);
+    grid-template-rows: repeat(5, 60px);
   }
 
   .form-container form .inputs input:nth-child(2) {
@@ -891,8 +906,8 @@ nav {
   }
 
   .projects-intro h3 {
-    font-size: 5rem;
-    line-height: 5.1rem;
+    font-size: 4rem;
+    line-height: 4.1rem;
   }
 
   .project-item .project-name h4 {
