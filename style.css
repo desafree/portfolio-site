@@ -73,11 +73,12 @@ nav {
   grid-template-columns: repeat(2, 1fr);
   padding: 30px;
   color: var(--bianco);
-  transition: all 0.5s;
+  transition: transform 0.5s;
 }
 
 .intro .project-box:hover {
   transform: scale(0.95);
+  border: 2px solid white;
 }
 
 /* -marquee effect start*/
@@ -160,10 +161,12 @@ nav {
   align-items: center;
   background: linear-gradient(to bottom, var(--giallo) 50%, transparent),
     url('./assets/grain.svg');
+  transition: transform 0.5s;
 }
 
 .intro .work-box:hover {
   transform: scale(0.95);
+  border: 2px solid white;
 }
 /* -work-box style end */
 
@@ -181,10 +184,12 @@ nav {
   align-items: center;
   background: linear-gradient(to top, var(--rosino-scuro) 50%, transparent),
     url('./assets/grain.svg');
+  transition: transform 0.5s;
 }
 
 .intro .about-box:hover {
   transform: scale(0.95);
+  border: 2px solid white;
 }
 /* -about-box style end */
 
@@ -202,10 +207,12 @@ nav {
   align-items: center;
   background: linear-gradient(to top, var(--verde), transparent),
     url('./assets/grain.svg');
+  transition: transform 0.5s;
 }
 
 .intro .contact-box:hover {
   transform: scale(0.95);
+  border: 2px solid white;
 }
 /* -contact-box style end */
 /* --------------------intro section end*/
@@ -272,11 +279,32 @@ nav {
 .project-item .project-description {
   padding: 80px;
   display: flex;
+  flex-direction: column;
+  gap: 40px;
   align-items: center;
   margin-right: 10px;
   flex-basis: 50%;
   background: linear-gradient(to right, var(--giallo), transparent),
     url('./assets/grain.svg');
+  text-align: center;
+}
+
+.project-item .project-description .links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-item .project-description .links a,
+.project-item .project-description .links a:visited,
+.project-item .project-description .links a:link {
+  color: white;
+  text-transform: uppercase;
+}
+
+.project-item .project-description .links a:hover {
+  color: orange;
 }
 
 .project-item .project-name {
@@ -404,6 +432,8 @@ nav {
 .about .about-img img {
   width: 100%;
   max-width: 500px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 0.5s;
 }
 
 .about-boxes {
@@ -413,7 +443,7 @@ nav {
   grid-gap: 10px;
 }
 
-.about-box {
+.about-boxes .about-box {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 120px);
@@ -422,8 +452,8 @@ nav {
   position: relative;
 }
 
-.about-box:hover {
-  /* TODO:transition */
+.about-boxes .about-box:hover {
+  box-shadow: inset 0 0 0 15px rgba(255, 255, 255, 0.452);
 }
 
 .about-box .img-center {
@@ -480,6 +510,7 @@ nav {
   line-height: 35px;
   font-weight: 700;
   color: var(--giallo-scuro);
+  text-align: center;
 }
 
 .contact .socials .social-route {
