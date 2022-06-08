@@ -39,8 +39,8 @@ body {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 2.1rem;
-  color: #fff;
-  background-color: #000;
+  color: var(--bianco);
+  background-color: #333;
   padding: 20px;
   /* overflow: hidden; */
 }
@@ -73,6 +73,7 @@ nav {
   grid-template-columns: repeat(2, 1fr);
   padding: 30px;
   color: var(--bianco);
+  border: 2px solid white;
   transition: transform 0.5s;
 }
 
@@ -162,6 +163,7 @@ nav {
   background: linear-gradient(to bottom, var(--giallo) 50%, transparent),
     url('./assets/grain.svg');
   transition: transform 0.5s;
+  border: 2px solid white;
 }
 
 .intro .work-box:hover {
@@ -185,6 +187,7 @@ nav {
   background: linear-gradient(to top, var(--rosino-scuro) 50%, transparent),
     url('./assets/grain.svg');
   transition: transform 0.5s;
+  border: 2px solid white;
 }
 
 .intro .about-box:hover {
@@ -208,6 +211,7 @@ nav {
   background: linear-gradient(to top, var(--verde), transparent),
     url('./assets/grain.svg');
   transition: transform 0.5s;
+  border: 2px solid white;
 }
 
 .intro .contact-box:hover {
@@ -228,6 +232,7 @@ nav {
   padding: 200px 100px;
   color: #ebebeb;
   position: relative;
+  border: 2px solid white;
 }
 
 .projects-intro h3 {
@@ -287,6 +292,7 @@ nav {
   background: linear-gradient(to right, var(--giallo), transparent),
     url('./assets/grain.svg');
   text-align: center;
+  border: 2px solid white;
 }
 
 .project-item .project-description .links {
@@ -315,6 +321,7 @@ nav {
   flex-basis: 50%;
   background: linear-gradient(to left, var(--giallo), transparent),
     url('./assets/grain.svg');
+  border: 2px solid white;
 }
 
 .project-item .project-name h4 {
@@ -406,6 +413,7 @@ nav {
   padding: 100px;
   justify-content: center;
   align-items: center;
+  border: 2px solid white;
 }
 
 .about .about-intro h3 {
@@ -450,6 +458,7 @@ nav {
   padding: 30px;
   transition: all 0.3s;
   position: relative;
+  border: 2px solid white;
 }
 
 .about-boxes .about-box:hover {
@@ -502,6 +511,7 @@ nav {
   padding: 200px 0;
   background: linear-gradient(-128deg, rgba(255, 255, 255, 0) 5%, #090909),
     url('./assets/grain.svg');
+  border: 2px solid white;
 }
 
 .contact .socials .text {

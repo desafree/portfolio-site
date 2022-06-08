@@ -31,55 +31,55 @@ function marquee(which, time, direction) {
 
 var master = gsap.timeline().add(marquee(boxes, 25, dirFromLeft), 1);
 
-var rotation = gsap.to('.rotation', { rotate: 360, borderColor: 'orange' });
-ScrollTrigger.create({
-  trigger: '.projects',
-  animation: rotation,
-  scrub: 1,
-  start: 'top 50%',
-  end: 'bottom 0%',
-});
+// var rotation = gsap.to('.rotation', { rotate: 360, borderColor: 'orange' });
+// ScrollTrigger.create({
+//   trigger: '.projects',
+//   animation: rotation,
+//   scrub: 1,
+//   start: 'top 50%',
+//   end: 'bottom 0%',
+// });
 
-function returnTranslationBasedOnScreen() {
-  if (window.innerWidth <= 1000) {
-    return -2000;
-  }
-  return 2000;
-}
+// function returnTranslationBasedOnScreen() {
+//   if (window.innerWidth <= 1000) {
+//     return -2000;
+//   }
+//   return 2000;
+// }
 
-var tl = gsap.timeline();
-tl.from('.item1 .project-description', { x: -2000, ease: 'power2' });
-tl.from(
-  '.item1 .project-name',
-  { x: returnTranslationBasedOnScreen, ease: 'power2' },
-  '<'
-);
-tl.from('.item2 .project-description', { x: -2000, ease: 'power2' });
-tl.from(
-  '.item2 .project-name',
-  { x: returnTranslationBasedOnScreen, ease: 'power2' },
-  '<'
-);
-tl.from('.item3 .project-description', { x: -2000, ease: 'power2' });
-tl.from(
-  '.item3 .project-name',
-  { x: returnTranslationBasedOnScreen, ease: 'power2' },
-  '<'
-);
-tl.from('.item4 .project-description', { x: -2000, ease: 'power2' });
-tl.from(
-  '.item4 .project-name',
-  { x: returnTranslationBasedOnScreen, ease: 'power2' },
-  '<'
-);
+// var tl = gsap.timeline();
+// tl.from('.item1 .project-description', { x: -2000, ease: 'power2' });
+// tl.from(
+//   '.item1 .project-name',
+//   { x: returnTranslationBasedOnScreen, ease: 'power2' },
+//   '<'
+// );
+// tl.from('.item2 .project-description', { x: -2000, ease: 'power2' });
+// tl.from(
+//   '.item2 .project-name',
+//   { x: returnTranslationBasedOnScreen, ease: 'power2' },
+//   '<'
+// );
+// tl.from('.item3 .project-description', { x: -2000, ease: 'power2' });
+// tl.from(
+//   '.item3 .project-name',
+//   { x: returnTranslationBasedOnScreen, ease: 'power2' },
+//   '<'
+// );
+// tl.from('.item4 .project-description', { x: -2000, ease: 'power2' });
+// tl.from(
+//   '.item4 .project-name',
+//   { x: returnTranslationBasedOnScreen, ease: 'power2' },
+//   '<'
+// );
 
-ScrollTrigger.create({
-  trigger: '.projects-items',
-  animation: tl,
-  scrub: 2,
-  start: 'top 90%',
-  end: 'bottom 90%',
-});
+// ScrollTrigger.create({
+//   trigger: '.projects-items',
+//   animation: tl,
+//   scrub: 2,
+//   start: 'top 90%',
+//   end: 'bottom 90%',
+// });
 
 // -moz-transform": "matrix(1, 0, 0, 1, -75, 0)"
 
