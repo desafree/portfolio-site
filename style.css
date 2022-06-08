@@ -156,7 +156,7 @@ nav {
 /* -work-box style start */
 .intro .work-box {
   color: #fff;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   grid-column: 3/4;
   display: flex;
@@ -181,7 +181,7 @@ nav {
 .intro .about-box {
   grid-column: 4/5;
   color: #fff;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   grid-column: 3/4;
   display: flex;
@@ -207,7 +207,7 @@ nav {
   grid-column: 4/5;
   grid-row: 1/-1;
   color: #fff;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
@@ -607,7 +607,7 @@ nav {
   display: flex;
   gap: 10px;
   padding: 100px;
-  padding-top: 50px;
+  padding-top: 30px;
   max-width: 1500px;
   margin: 0 auto;
 }
@@ -621,7 +621,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 60px);
-  gap: 20px;
+  gap: 10px;
 }
 
 .form-container form .inputs textarea {
@@ -925,7 +925,7 @@ nav {
   }
 
   .form-container form {
-    padding: 50px 20px 70px;
+    padding: 30px 20px 70px;
   }
 
   .form-container {
@@ -933,6 +933,6 @@ nav {
   }
 
   .form-container h3 {
-    padding: 100px 20px 0px;
+    padding: 70px 20px 0px;
   }
 }
